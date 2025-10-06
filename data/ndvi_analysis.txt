@@ -1,0 +1,48 @@
+NDVI (Normalized Difference Vegetation Index) Analysis Guide
+
+Overview:
+NDVI is a standardized index allowing you to generate an image displaying greenness (relative biomass). This index takes advantage of the contrast of the characteristics of two bands from a multispectral raster dataset — the chlorophyll pigment absorptions in the red band and the high reflectivity of plant materials in the near-infrared (NIR) band.
+
+Mathematical Formula:
+NDVI = (NIR - Red) / (NIR + Red)
+
+Where:
+- NIR = Near-infrared band reflectance
+- Red = Red band reflectance
+
+Interpretation Scale:
+-1.0 to 0.0: Non-vegetated surfaces (water, snow, built-up areas)
+0.0 to 0.3: Sparse vegetation
+0.3 to 0.6: Moderate vegetation
+0.6 to 1.0: Dense, healthy vegetation
+
+Applications:
+1. Crop health monitoring
+2. Drought assessment
+3. Vegetation mapping
+4. Land cover classification
+5. Environmental change detection
+
+Sentinel-2 NDVI Calculation:
+- Red Band: Band 4 (10m resolution)
+- NIR Band: Band 8 (10m resolution)
+
+Landsat 8 NDVI Calculation:
+- Red Band: Band 4 (30m resolution)
+- NIR Band: Band 5 (30m resolution)
+
+MODIS NDVI Products:
+- MOD13Q1: 16-day composite, 250m resolution
+- MYD13Q1: Aqua satellite, same specifications
+
+Limitations:
+- Saturated in very dense vegetation
+- Affected by atmospheric conditions
+- Sensitive to soil background in sparse vegetation
+- Cloud contamination affects accuracy
+
+Best Practices:
+- Perform atmospheric correction before calculation
+- Use quality assessment bands to filter poor quality data
+- Consider multi-temporal analysis for trend detection
+- Complement with other vegetation indices for comprehensive analysis

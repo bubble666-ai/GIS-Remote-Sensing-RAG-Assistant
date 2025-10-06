@@ -1,0 +1,89 @@
+Landsat Satellite Handbook
+
+Landsat Program Overview:
+The Landsat program is the longest-running Earth observation satellite program, providing continuous satellite imagery of Earth since 1972.
+
+Landsat 8 and 9 Specifications:
+Mission Details:
+- Launch: Landsat 8 (2013), Landsat 9 (2021)
+- Orbit: Sun-synchronous, 705km altitude
+- Revisit Time: 16 days
+- Equatorial Crossing: 10:11 AM (descending)
+- Swath Width: 185km
+
+OLI (Operational Land Imager) Specifications:
+Bands and Resolutions:
+- Band 1 (Coastal/Aerosol): 433-453nm, 30m resolution
+- Band 2 (Blue): 450-515nm, 30m resolution
+- Band 3 (Green): 525-600nm, 30m resolution
+- Band 4 (Red): 630-680nm, 30m resolution
+- Band 5 (NIR): 845-885nm, 30m resolution
+- Band 6 (SWIR 1): 1560-1660nm, 30m resolution
+- Band 7 (SWIR 2): 2100-2300nm, 30m resolution
+- Band 8 (Panchromatic): 500-680nm, 15m resolution
+- Band 9 (Cirrus): 1360-1390nm, 30m resolution
+
+TIRS (Thermal Infrared Sensor) Specifications:
+- Band 10 (TIRS 1): 10.6-11.2μm, 100m resolution
+- Band 11 (TIRS 2): 11.5-12.5μm, 100m resolution
+
+Data Products and Processing Levels:
+Level-1 Products:
+- Level-1TP: Terrain-corrected
+- Level-1GT: Terrain-corrected with ground control points
+- Level-1G: Systematic correction
+- Level-1R: Radiometric correction only
+
+Level-2 Products:
+- Surface Reflectance
+- Surface Temperature
+- Surface Emissivity
+- Cloud Masks
+- Quality Assessment Bands
+
+Radiometric Resolution:
+- 12-bit data collection
+- 16-bit data storage
+- Improved signal-to-noise ratio
+- Better dynamic range
+
+Key Applications:
+1. Agricultural monitoring and yield prediction
+2. Forest management and deforestation tracking
+3. Water resource management
+4. Urban planning and development monitoring
+5. Disaster assessment and response
+6. Climate change research
+7. Geologic mapping and mineral exploration
+
+Advantages over Previous Landsat Missions:
+- Improved signal-to-noise ratio
+- Additional spectral bands (coastal and cirrus)
+- Higher radiometric resolution (12-bit vs 8-bit)
+- More reliable calibration
+- Improved data processing algorithms
+
+Data Access:
+- Free and open data access through USGS EarthExplorer
+- Available in multiple data formats (GeoTIFF, HDF, etc.)
+- Bulk download capabilities
+- Cloud-based access through AWS and Google Cloud Platform
+
+Quality Assessment:
+- Comprehensive quality assessment bands
+- Cloud and cloud shadow detection
+- Snow and ice detection
+- Water detection
+- Saturation flags
+
+Comparison with Sentinel-2:
+- Landsat 8/9: 30m resolution, 16-day revisit
+- Sentinel-2: 10-20m resolution, 5-day revisit
+- Complementary coverage and temporal resolution
+- Similar spectral bands for vegetation analysis
+
+Future Developments:
+- Landsat Next planned for 2030s
+- Planned improvements in resolution and spectral coverage
+- Enhanced thermal capabilities
+- Improved data processing and delivery

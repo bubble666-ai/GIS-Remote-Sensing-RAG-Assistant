@@ -1,0 +1,42 @@
+# Core dependencies
+langchain>=0.1.0
+langchain-community>=0.0.13
+langchain-openai>=0.0.2
+faiss-cpu>=1.7.4
+sentence-transformers>=2.2.2
+openai>=1.3.0
+streamlit>=1.28.0
+python-dotenv>=1.0.0
+
+# Document processing
+PyPDF2>=3.0.1
+python-docx>=0.8.11
+unstructured>=0.10.0
+tiktoken>=0.5.1
+
+# Data processing and visualization
+pandas>=2.1.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+numpy>=1.24.0
+
+# Text processing
+nltk>=3.8.1
+
+# Vector stores
+chromadb>=0.4.15
+watchdog>=3.0.0
+
+# AI model providers
+google-generativeai>=0.3.0
+anthropic>=0.8.0
+requests>=2.31.0
+transformers>=4.35.0
+torch>=2.1.0
+google-api-python-client>=2.108.0
+langchain-google-genai>=0.0.6
+langchain-anthropic>=0.0.4
+
+# Additional model providers (install these separately if needed)
+# xai>=1.0.0
+# zhipuai>=2.0.0

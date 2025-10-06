@@ -1,0 +1,63 @@
+Sentinel Satellite Missions Overview
+
+The Copernicus Sentinel missions provide a revolutionary approach to Earth observation, delivering operational data for a wide range of applications.
+
+Sentinel-1: Radar Imaging
+- Mission: C-band synthetic aperture radar (SAR)
+- Constellation: Two satellites (Sentinel-1A, Sentinel-1B)
+- Revisit Time: 6 days (dual constellation)
+- Resolution: 5x20m (strip map), 5x40m (interferometric wide swath)
+- Key Features: All-weather imaging, day and night operation
+- Applications: Maritime surveillance, land monitoring, emergency response
+
+Sentinel-2: Multispectral Imaging
+- Mission: Multispectral optical imaging
+- Constellation: Two satellites (Sentinel-2A, Sentinel-2B)
+- Revisit Time: 5 days (dual constellation)
+- Spatial Resolution: 10m, 20m, and 60m
+- Spectral Bands: 13 bands (443-2190nm)
+- Key Bands for Vegetation:
+  * Band 4 (Red): 665nm, 10m resolution
+  * Band 8 (NIR): 842nm, 10m resolution
+  * Band 8A (Red Edge): 865nm, 20m resolution
+- Applications: Land cover mapping, vegetation monitoring, agriculture
+
+Sentinel-3: Ocean and Land Monitoring
+- Mission: Ocean and land surface monitoring
+- Instruments: OLCI, SLSTR, SRAL, DORIS, MWR
+- Revisit Time: 2 days (OLCI), less than 1 day (SRAL)
+- Resolution: 300m (OLCI), 500m (SLSTR)
+- Applications: Oceanography, climate monitoring, vegetation
+
+Sentinel-4: Atmospheric Monitoring
+- Mission: Atmospheric composition monitoring
+- Platform: Geostationary orbit
+- Coverage: Europe and North Africa
+- Applications: Air quality monitoring, atmospheric chemistry
+
+Sentinel-5P: Atmospheric Chemistry
+- Mission: Atmospheric composition monitoring
+- Instrument: TROPOMI
+- Resolution: 7x7km (most products)
+- Applications: Air quality, ozone monitoring, climate
+
+Data Access:
+- Data is free and open
+- Access via Copernicus Open Access Hub
+- Various processing levels available
+- Multiple data formats supported
+
+Processing Levels:
+Level-0: Raw compressed data
+Level-1A: Decompressed data, with annotations
+Level-1B: Data in sensor geometry
+Level-1C: Data in map geometry (top-of-atmosphere reflectance)
+Level-2A: Bottom-of-atmosphere reflectance
+Level-2B: Map geometry, geophysical products
+
+Key Advantages:
+- High spatial and temporal resolution
+- Multispectral capabilities
+- Global coverage
+- Free and open data policy
+- Long-term mission continuity
