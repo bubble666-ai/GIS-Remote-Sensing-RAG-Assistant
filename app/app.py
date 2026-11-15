@@ -37,14 +37,6 @@ except ImportError:
     DOCUMENT_PROCESSORS_AVAILABLE = False
 
 try:
-    from langchain.text_splitter import RecursiveCharacterTextSplitter
-    from langchain.embeddings import HuggingFaceEmbeddings
-    from langchain.vectorstores import FAISS
-    LANGCHAIN_AVAILABLE = True
-except ImportError:
-    LANGCHAIN_AVAILABLE = False
-
-try:
     import psycopg2
     POSTGRESQL_AVAILABLE = True
 except ImportError:
@@ -1009,30 +1001,24 @@ class MetadataEnhancedRetriever:
         self.data_dir = Path(data_dir)
         self.loader = UnifiedDocumentLoader(data_dir)
         self.documents = self.loader.load_all_documents()
-
-        # Add chunking if langchain is available
-        if LANGCHAIN_AVAILABLE:
-            self.text_splitter = RecursiveCharacterTextSplitter(
-                chunk_size=1000,
-                chunk_overlap=200
-            )
-        else:
-            self.text_splitter = None
+        self.chunk_size = 1000
+        self.chunk_overlap = 200
 
     def add_documents_with_metadata(self, documents: List[Dict[str, Any]] = None):
         """Add documents with rich metadata."""
         if documents is None:
             documents = self.documents
 
-        if not self.text_splitter:
-            # Simple approach without langchain
-            return documents
+        if not documents:
+            return []
 
         enriched_documents = []
 
         for doc in documents:
-            # Split document into chunks
-            chunks = self.text_splitter.split_text(doc['content'])
+            # Split into overlapping chunks (stdlib, no langchain)
+            content = doc['content']
+            step = max(1, self.chunk_size - self.chunk_overlap)
+            chunks = [content[i:i + self.chunk_size] for i in range(0, len(content), step)] or ['']
 
             for i, chunk in enumerate(chunks):
                 # Create metadata for each chunk
